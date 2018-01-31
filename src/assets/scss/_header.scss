@@ -1,137 +1,63 @@
-.no-padding {
-  padding: 0 !important;
-}
-
 .aw-header {
-  margin-top: 1.25rem;
-  .aw-nav {
-    text-align: right;
-    font-family: 'circe-bold', sans-serif;
-    font-weight: 700;
-    ul {
-      margin-right: 1.375rem;
-      margin-bottom: 0;
-      li {
-        display: inline-block;
-        padding-right: 1.125rem;
-        a {
-          text-decoration: none;
-          color: #222;
-          font-size: .8rem;
-        }
-      }
-      .get-started {
-        border: 2px #000 solid;
-        border-radius: 10em;
-        padding: 10px 23px 8px 24px;
-      }
-    }
-  }
+  padding: 20px 0;
 }
 
-.aw-menu--nav {
-  display: none;
-  position: absolute;
-  margin: 0;
-  padding-top: 1.55rem;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: #303A88;
-  .aw-menu--logo {
-    padding-left: 10px;
-  }
-  .aw-menu--cancel {
-    cursor: pointer;
-    padding-right: 15px;
-  }
-  .aw-menu--content {
-    margin-top: 40px;
-    text-align: center;
-    font-family: 'circe', sans-serif;
-    font-weight: 500;
-    ul {
-      padding: 0;
-      margin-bottom: 0;
-      li {
-        padding-top: 8px;
-        list-style-type: none;
-        text-align: center;
-        a {
-          text-decoration: none;
-          color: #fff;
-          font-size: .8rem;
-        }
-      }
-      .get-started {
-        margin-top: 30px;
-        display: inline-block;
-        border: 1px #fff solid;
-        border-radius: 10em;
-        padding: 10px 23px 8px 24px;
-      }
-    }
-  }
-}
-
-.aw-mobile--menu {
-  position: absolute;
-  z-index: 15;
-  cursor: pointer;
-  text-align: right;
-  .aw-mobile--menu---bars {
-    cursor: pointer;
-    height: 14px;
-    span {
-      cursor: pointer;
-      position: relative;
-      display: block;
-      height: 2px;
-      width: 24px;
-      background: #222;
-      border-radius: 9px;
-      opacity: 1;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-
-      &:first-child {
-        top: 0;
-        transform-origin: left center;
-      }
-      &:nth-child(2) {
-        top: 5px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-      }
-
-      &:last-child {
-        top: 10px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-      }
-    }
-  }
-  .open span:first-child {
-    transform: rotate(45deg);
-    top: -3px;
-  }
-
-  .open span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
-  }
-
-  .open span:last-child {
-    transform: rotate(-45deg);
-    top: 10px;
-  }
-}
+//.aw-mobile--menu {
+//  position: absolute;
+//  z-index: 15;
+//  cursor: pointer;
+//  text-align: right;
+//  .aw-menu--toggle {
+//    cursor: pointer;
+//    height: 14px;
+//    span {
+//      cursor: pointer;
+//      position: relative;
+//      display: block;
+//      height: 2px;
+//      width: 24px;
+//      background: #222;
+//      border-radius: 9px;
+//      opacity: 1;
+//      transform: rotate(0deg);
+//      transition: .25s ease-in-out;
+//
+//      &:first-child {
+//        top: 0;
+//        transform-origin: left center;
+//      }
+//      &:nth-child(2) {
+//        top: 5px;
+//        -webkit-transform-origin: left center;
+//        -moz-transform-origin: left center;
+//        -o-transform-origin: left center;
+//        transform-origin: left center;
+//      }
+//
+//      &:last-child {
+//        top: 10px;
+//        -webkit-transform-origin: left center;
+//        -moz-transform-origin: left center;
+//        -o-transform-origin: left center;
+//        transform-origin: left center;
+//      }
+//    }
+//  }
+//  .open span:first-child {
+//    transform: rotate(45deg);
+//    top: -3px;
+//  }
+//
+//  .open span:nth-child(2) {
+//    width: 0%;
+//    opacity: 0;
+//  }
+//
+//  .open span:last-child {
+//    transform: rotate(-45deg);
+//    top: 10px;
+//  }
+//}
 
 .aw-mobile--fade {
   display: none;
@@ -224,19 +150,6 @@
           font-size: 0.75em;
           font-family: 'aleo', sans-serif;
           font-weight: 500;
-        }
-        .get-started {
-          display: inline-block;
-          font-family: 'circe', sans-serif;
-          font-weight: 700;
-          background-color: #FC8663;
-          border-radius: 10em;
-          padding: 8px 20px 8px 20px;
-          a {
-            font-size: .8em;
-            text-decoration: none;
-            color: #fff;
-          }
         }
       }
     }

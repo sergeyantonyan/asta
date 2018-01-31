@@ -1,0 +1,14 @@
+.btn {
+  border-radius: 100px;
+  width: 120px;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+.btn-success {
+  @include button-variant($aw-orange, #ffffff);
+  color: #fff;
+  @include hover-focus {
+    color: #fff;
+  };
+}

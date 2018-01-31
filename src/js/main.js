@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.aw-mobile--menu---bars').click(function () {
+    $('.aw-menu--toggle').click(function () {
         /*$('.aw-menu--nav').addClass('aw-mobile--fullpage');*/
         $(this).toggleClass('open');
     });
