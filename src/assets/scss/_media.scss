@@ -1,0 +1,57 @@
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .aw-content {
+    height: 40.625rem;
+    .aw-content--items {
+      h1 {
+        font-size: 2.375rem;
+      }
+      p {
+        padding-top: 1.375rem;
+        font-size: 1.1875em;
+      }
+      .zip-code {
+        padding: 41px 0 34px 0;
+        input {
+          width: 13.0625rem;
+          height: 3.125rem;
+          &::placeholder {
+            font-size: 1.125rem;
+          }
+        }
+      }
+      .get-started {
+        padding: 18px 40px 16px 40px;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .aw-header {
+    .aw-nav {
+      ul {
+        margin-right: 1.875rem;
+        li {
+          padding-right: 1.4625rem;
+          a {
+            font-size: 1.0625rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

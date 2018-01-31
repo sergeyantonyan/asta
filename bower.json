@@ -1,9 +1,9 @@
 {
-  "name": "Asta_works",
-  "description": "",
-  "main": "",
-  "license": "MIT",
-  "homepage": "",
+  "name": "astaworks",
+  "description": "\"# asta\"",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "https://github.com/sergeyantonyan/asta",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -12,6 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "bootstrap": "v4.0.0-beta"
   }
 }
