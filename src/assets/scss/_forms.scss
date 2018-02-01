@@ -1,0 +1,10 @@
+.form-control {
+  background-color: #ffffff;
+  font-size: 12px;
+  height: 32px;
+  border-width: 2px;
+  @include media-breakpoint-up(md) {
+	height: 50px;
+	font-size: 18px;
+  }
+}

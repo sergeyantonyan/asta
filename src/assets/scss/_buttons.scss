@@ -1,8 +1,22 @@
+button, .btn, [role="button"] {
+  cursor: pointer;
+  @include hover-focus-active {
+    outline: 0;
+  }
+}
+
 .btn {
   border-radius: 100px;
   width: 120px;
-  padding-top: 11.5px;
-  padding-bottom: 11.5px;
+  padding: 15px 10px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    width: 180px;
+    padding: 20px 10px 18px;
+  }
 }
 
 .btn-success {
@@ -10,5 +24,19 @@
   color: #fff;
   @include hover-focus {
     color: #fff;
-  };
+  }
+}
+
+.btn-close {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-outline-black {
+  @include button-outline-variant(#222, #222);
+  border-width: 2px;
+  @include hover-focus-active {
+    color: #fff;
+    background-color: #222222;
+  }
 }

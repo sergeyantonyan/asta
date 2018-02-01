@@ -1,0 +1,57 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Circe', sans-serif;
+  color: #39393B;
+  font-size: 13px;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-family: 'Aleo', sans-serif;
+  font-size: 14px;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+}

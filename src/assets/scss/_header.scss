@@ -1,165 +1,66 @@
 .aw-header {
-  padding: 20px 0;
-}
-
-//.aw-mobile--menu {
-//  position: absolute;
-//  z-index: 15;
-//  cursor: pointer;
-//  text-align: right;
-//  .aw-menu--toggle {
-//    cursor: pointer;
-//    height: 14px;
-//    span {
-//      cursor: pointer;
-//      position: relative;
-//      display: block;
-//      height: 2px;
-//      width: 24px;
-//      background: #222;
-//      border-radius: 9px;
-//      opacity: 1;
-//      transform: rotate(0deg);
-//      transition: .25s ease-in-out;
-//
-//      &:first-child {
-//        top: 0;
-//        transform-origin: left center;
-//      }
-//      &:nth-child(2) {
-//        top: 5px;
-//        -webkit-transform-origin: left center;
-//        -moz-transform-origin: left center;
-//        -o-transform-origin: left center;
-//        transform-origin: left center;
-//      }
-//
-//      &:last-child {
-//        top: 10px;
-//        -webkit-transform-origin: left center;
-//        -moz-transform-origin: left center;
-//        -o-transform-origin: left center;
-//        transform-origin: left center;
-//      }
-//    }
-//  }
-//  .open span:first-child {
-//    transform: rotate(45deg);
-//    top: -3px;
-//  }
-//
-//  .open span:nth-child(2) {
-//    width: 0%;
-//    opacity: 0;
-//  }
-//
-//  .open span:last-child {
-//    transform: rotate(-45deg);
-//    top: 10px;
-//  }
-//}
-
-.aw-mobile--fade {
-  display: none;
-}
-
-.aw-mobile--fullpage {
-  display: block;
-}
-
-.aw-content {
-  height: 28.625em;
-  .aw-content--items {
-    text-align: center;
-    color: #39393b;
-    letter-spacing: normal;
-    h1 {
-      font-size: 1.3em;
-      font-family: 'circe-bold', sans-serif;
-      font-weight: 700;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  transition: 0.27s all;
+  
+  .btn-get--started {
+    @include media-breakpoint-up(md) {
+      font-size: 17px;
+      width: 130px;
+      padding: 11px;
     }
-    p {
-      padding-top: 1.375em;
-      font-family: 'aleo', sans-serif;
-      font-weight: 500;
-      font-size: .8em;
-    }
-    .zip-code {
-      padding: 20px 0 30px 0;
-      input {
-        width: 9.0625em;
-        height: 2.125em;
-        border-radius: 3px;
-        background-color: #ffffff;
-        border: solid 2px #d6d6d6;
-        &::placeholder {
-          font-family: 'circe', sans-serif;
-          font-size: .8em;
-          opacity: 0.47;
-          letter-spacing: normal;
-          text-align: center;
-          color: #626262;
-        }
-      }
-    }
-    .get-started {
-      display: inline-block;
-      font-family: 'circe', sans-serif;
-      font-weight: 700;
-      background-color: #FC8663;
-      border-radius: 10em;
-      padding: 8px 20px 8px 20px;
-      a {
-        font-size: .8em;
-        text-decoration: none;
-        color: #fff;
-      }
-    }
+  }
+  @include media-breakpoint-up(md) {
+    padding: 20px 0;
   }
 }
 
-.main-content {
-  .aw-main--content {
-    .aw-content--box {
-      background-color: #f8f6f6;
-      .aw-content--item {
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        color: #39393b;
-        h2 {
-          padding: 0 20px 0 20px;
-          font-size: 1.25em;
-          font-family: 'circe-bold', sans-serif;
-          font-weight: 700;
-        }
-        h3 {
-          padding-top: 14px;
-          font-size: 1em;
-          font-family: 'circe-bold', sans-serif;
-          font-weight: 700;
-        }
-        .aw-content--oval {
-          width: 96px;
-          height: 96px;
-          border-radius: 10em;
-          background-color: #d8d8d8;
-        }
-        p {
-          padding: 16px 9px 0 9px;
-          font-size: 0.75em;
-          font-family: 'aleo', sans-serif;
-          font-weight: 500;
-        }
-      }
-    }
-    .ad-box {
-      width: 100%;
-      height: 231px;
-      background-color: #e7e7e7;
-    }
-    .white-box {
-      background-color: #fff;
-    }
+.aw-logo--fill {
+  fill: #FC8562;
+}
+
+.aw-logo--shape {
+  transition: 0.27s all;
+}
+
+.aw-logo {
+  svg {
+    width: 123px;
+    height: 40px;
   }
 }
+
+.aw-logo--text {
+  stroke-width: 10;
+  stroke: $aw-orange;
+  fill: $aw-orange;
+}
+
+.aw-nav--toggle {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: transparent;
+  
+  svg {
+    max-width: 18px;
+    path {
+      stroke-width: 2;
+      stroke: #222222;
+      transition: 0.27s stroke;
+    }
+    
+  }
+}
+
+

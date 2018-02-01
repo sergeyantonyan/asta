@@ -1,0 +1,41 @@
+.aw-footer {
+  padding: 30px 0;
+  color: #fff;
+  line-height: 2;
+  @include media-breakpoint-up(md) {
+	padding: 60px 0;
+  }
+  a {
+	color: #FFF;
+  }
+  ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 15px;
+	@include media-breakpoint-up(md) {
+	  margin-top: 30px;
+	}
+  }
+  
+  h4 {
+	letter-spacing: 1.5px;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	@include media-breakpoint-up(md) {
+	  font-size: 16px;
+	}
+	&:after {
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  height: 3px;
+	  background-color: #45BBC9;
+	}
+  }
+  
+}

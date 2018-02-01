@@ -1,0 +1,53 @@
+.container-fluid {
+  max-width: 1280px;
+  padding-left: 30px;
+  padding-right: 30px;
+  &.full-width {
+    max-width: none;
+  }
+}
+
+.page-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.aw-process {
+  .row {
+    min-height: 600px;
+  }
+  h2 {
+    span {
+      font-weight: 400;
+      color: #B11515;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+.aw-process--halves {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.aw-process--title {
+  position: relative;
+  z-index: 1;
+}
+
+.aw-process--left {
+  background-color: #F8F8F8;
+}
+
+.aw-process--right {
+  background-color: #ECECEC;
+}
