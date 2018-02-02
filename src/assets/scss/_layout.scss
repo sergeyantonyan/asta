@@ -1,9 +1,13 @@
+body {
+  position: relative;
+}
 .container-fluid {
   max-width: 1280px;
   padding-left: 30px;
   padding-right: 30px;
   &.full-width {
     max-width: none;
+    
   }
 }
 
@@ -11,9 +15,26 @@
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
+  &:nth-child(1) {
+    padding-top: 105px;
+    @include media-breakpoint-up(md) {
+      .row {
+        min-height: 480px;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 100px;
+      .row {
+        min-height: 768px;
+      }
+    }
+    .container-fluid>.row {
+      align-items: center;
+    }
+  }
   @include media-breakpoint-up(lg) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
 }
 
@@ -50,4 +71,16 @@
 
 .aw-process--right {
   background-color: #ECECEC;
+}
+
+.aw-list--checked {
+  font-family: 'Aleo', sans-serif;
+  list-style-type: none;
+  line-height: 2;
+}
+
+.aw-reinvented {
+  .container-fluid {
+    position: relative;
+  }
 }

@@ -31,4 +31,11 @@
 	  margin-bottom: 35px;
 	}
   }
+  .input_group {
+	display: none;
+	.zip-open & {
+	  display: block;
+	}
+  }
+  
 }

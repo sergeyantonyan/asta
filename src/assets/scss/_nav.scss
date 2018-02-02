@@ -77,6 +77,21 @@
   }
 }
 
+.aw-nav--link {
+  position: relative;
+  &.active {
+	&:after {
+	  content: '';
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  height: 3px;
+	  background-color: #222;
+	  display: block;
+	}
+  }
+}
+
 .nav-open {
   overflow: hidden;
   .aw-header {

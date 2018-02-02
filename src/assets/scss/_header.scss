@@ -5,8 +5,8 @@
   right: 0;
   top: 0;
   z-index: 999;
-  background-color: #ffffff;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  background-color: rgba(#ffffff, 0.5);
+  //box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
   transition: 0.27s all;
   
   .btn-get--started {
@@ -17,7 +17,8 @@
     }
   }
   @include media-breakpoint-up(md) {
-    padding: 20px 0;
+    padding: 18px 0;
+    box-shadow: none;
   }
 }
 

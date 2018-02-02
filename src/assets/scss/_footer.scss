@@ -2,6 +2,7 @@
   padding: 30px 0;
   color: #fff;
   line-height: 2;
+  position: relative;
   @include media-breakpoint-up(md) {
 	padding: 60px 0;
   }
@@ -12,6 +13,9 @@
 	list-style-type: none;
 	padding: 0;
 	margin-top: 15px;
+	&.aw-social {
+	  line-height: 1;
+	}
 	@include media-breakpoint-up(md) {
 	  margin-top: 30px;
 	}

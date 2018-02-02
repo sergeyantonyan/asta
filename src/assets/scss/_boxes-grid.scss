@@ -23,6 +23,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .aw-iconbox--description {
@@ -33,11 +38,13 @@
   width: 96px;
   height: 96px;
   border-radius: 10em;
-  background-color: #d8d8d8;
   margin-bottom: 14px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   @include media-breakpoint-up(md) {
     width: 112px;
-    height: 112px;
+    height: 70px;
     margin-bottom: 30px;
   }
 }
