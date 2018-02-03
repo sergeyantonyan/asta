@@ -1,13 +1,14 @@
 body {
   position: relative;
 }
+
 .container-fluid {
   max-width: 1280px;
   padding-left: 30px;
   padding-right: 30px;
   &.full-width {
-    max-width: none;
-    
+	max-width: none;
+	
   }
 }
 
@@ -16,39 +17,36 @@ body {
   padding-bottom: 40px;
   position: relative;
   &:nth-child(1) {
-    padding-top: 105px;
-    @include media-breakpoint-up(md) {
-      .row {
-        min-height: 480px;
-      }
-    }
-    @include media-breakpoint-up(lg) {
-      padding-top: 100px;
-      .row {
-        min-height: 768px;
-      }
-    }
-    .container-fluid>.row {
-      align-items: center;
-    }
+	padding-top: 105px;
+	@include media-breakpoint-up(md) {
+	  .row {
+		min-height: 480px;
+	  }
+	}
+	@include media-breakpoint-up(lg) {
+	  padding-top: 100px;
+	  .row {
+		min-height: 768px;
+	  }
+	}
+	.container-fluid > .row {
+	  align-items: center;
+	}
   }
   @include media-breakpoint-up(lg) {
-    padding-top: 100px;
-    padding-bottom: 40px;
+	padding-top: 100px;
+	padding-bottom: 40px;
   }
 }
 
 .aw-process {
-  .row {
-    min-height: 600px;
-  }
   h2 {
-    span {
-      font-weight: 400;
-      color: #B11515;
-      display: block;
-      margin-top: 5px;
-    }
+	span {
+	  font-weight: 400;
+	  color: #B11515;
+	  display: block;
+	  margin-top: 5px;
+	}
   }
 }
 
@@ -81,6 +79,49 @@ body {
 
 .aw-reinvented {
   .container-fluid {
-    position: relative;
+	position: relative;
+  }
+}
+
+.svg-wrap {
+  position: relative;
+  z-index: 100;
+  svg {
+	width: 270px;
+	height: auto;
+	max-width: 100%;
+	display: block;
+  }
+}
+
+.bg-bottle--right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  img {
+	height: 100%;
+  }
+}
+
+.bg-bottle--lefttop {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  text-align: center;
+  width: 25%;
+  img {
+	max-width: 90%;
+  }
+}
+
+.bg-bottle--leftbottom {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 25%;
+  text-align: center;
+  img {
+	max-width: 80%;
   }
 }

@@ -1,1 +1,20 @@
-<svg width="8" height="18" viewBox="0 0 8 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>facebook</title><defs><path id="a" d="M4 18H0V0h8v18z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M1.729 3.486v2.478H0v3.03h1.729V18H5.28V8.995h2.383s.223-1.453.332-3.042H5.294V3.881c0-.31.387-.726.77-.726H8V0H5.368c-3.726 0-3.64 3.033-3.64 3.486z" fill="#FFF" mask="url(#b)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="18px" viewBox="0 0 8 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4 18 0 18 0 0 4 0 8 0 8 18"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="facebook">
+            <g id="facebook-letter-logo">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1.72894471,3.48625 L1.72894471,5.96375 L0,5.96375 L0,8.994 L1.72894471,8.994 L1.72894471,18 L5.28063806,18 L5.28063806,8.995 L7.66406762,8.995 C7.66406762,8.995 7.88738766,7.542 7.9961907,5.953 L5.29444676,5.953 L5.29444676,3.88075 C5.29444676,3.57125 5.68132849,3.15525 6.06463901,3.15525 L8,3.15525 L8,0 L5.36801381,0 C1.64156895,0 1.72894471,3.03325 1.72894471,3.48625 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

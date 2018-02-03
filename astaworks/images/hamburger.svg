@@ -1,1 +1,12 @@
-<svg width="17" height="13" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg"><path d="M.386 1h16.228M.386 6.5h16.228M.386 12h16.228" stroke-width="1.5" stroke="#222" fill="none" stroke-linecap="square"/></svg>
+
+<svg width="17px" height="13px" viewBox="0 0 17 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="menu" stroke-width="1.5" stroke="#222222">
+            <g>
+                <path d="M0.386363636,1 L16.6136364,1" id="Line"></path>
+                <path d="M0.386363636,6.5 L16.6136364,6.5" id="Line-Copy-3"></path>
+                <path d="M0.386363636,12 L16.6136364,12" id="Line-Copy-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

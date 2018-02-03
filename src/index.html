@@ -103,8 +103,8 @@
 						<li><a class="nav-link aw-nav--link p-0" href="#nav-how_it__works">How it works</a></li>
 						<li><a class="nav-link aw-nav--link p-0" href="#nav-why_it__matters">Why it matters</a></li>
 						<li><a class="nav-link aw-nav--link p-0" href="#nav-faq">FAQ</a></li>
-						<li><a class="nav-link aw-nav--link p-0" href="#">Blog</a></li>
-						<li><a class="nav-link aw-nav--link p-0" href="#">Partners</a></li>
+						<li><a class="nav-link p-0" href="#">Blog</a></li>
+						<li><a class="nav-link p-0" href="#">Partners</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -132,7 +132,7 @@
 </header>
 <!-- HEADER /-->
 
-<main class="aw-main">
+<main class="aw-main aw-home">
 	<!--HERO-->
 	<section id="nav-hero" class="page-section aw-hero">
 		<div class="container-fluid">
@@ -143,12 +143,12 @@
 					choice to recycle easy.
 					See your
 					impact and earn rewards</p>
-					<form class="aw-hero--form" id="zip-code">
+					<form class="aw-hero--form" id="zip-form">
 						<div class="form-group input_group">
 							<input id="zip_input" class="form-control mx-auto p-0" type="text" placeholder="Enter your ZIP-code">
 						</div>
 						<div class="form-group mb-0">
-							<button href="#nav-hero" class="btn btn-block mx-auto btn-success btn-get--started">Get started</button>
+							<button id="btn-hero--submit" href="#nav-hero" class="btn btn-block mx-auto btn-success btn-get--started" data-submit="Submit"></button>
 						</div>
 					</form>
 				</div>
@@ -175,7 +175,7 @@
 
 				<div class="col-12 col-md-6 order-md-2">
 					<div class="aw-grid--item bg-gray">
-						<div class="aw-grid--image" style="background-image: url(/images/Image1.png)">
+						<div class="aw-grid--image" style="background-image: url(images/Image1.png)">
 
 						</div>
 					</div>
@@ -196,7 +196,7 @@
 				</div>
 				<div class="col-12 col-md-6 order-md-3">
 					<div class="aw-grid--item bg-gray">
-						<div class="aw-grid--image" style="background-image: url(/images/Image2.png)">
+						<div class="aw-grid--image" style="background-image: url(images/Image2.png)">
 
 						</div>
 					</div>
@@ -217,7 +217,7 @@
 				</div>
 				<div class="col-12 col-md-6 order-md-6">
 					<div class="aw-grid--item bg-gray">
-						<div class="aw-grid--image" style="background-image: url(/images/Image3.png)">
+						<div class="aw-grid--image" style="background-image: url(images/Image3.png)">
 
 						</div>
 					</div>
@@ -247,7 +247,7 @@
 					<div class="row">
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon1_1.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon1_1.png)">
 
 								</div>
 								<h4>Transparency all the way</h4>
@@ -255,7 +255,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon1_2.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon1_2.png)">
 
 								</div>
 								<h4>Get more recycled</h4>
@@ -263,7 +263,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon1_3.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon1_3.png)">
 
 								</div>
 								<h4>Track Impact</h4>
@@ -271,7 +271,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon1_4.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon1_4.png)">
 
 								</div>
 								<h4>Redeem rewards</h4>
@@ -288,13 +288,19 @@
 	</section>
 	<!--OUR STORY /-->
 	<section id="nav-our_story" class="page-section aw-reinvented bg-cream--darker">
-		<!--<div class="bg-bottles">-->
-
-		<!--</div>-->
+		<div class="bg-bottle--right d-none d-md-block">
+			<img src="images/bottles3.png" alt="">
+		</div>
+		<div class="bg-bottle--lefttop d-none d-md-block">
+			<img src="images/bottles1.png" alt="">
+		</div>
+		<div class="bg-bottle--leftbottom d-none d-md-block">
+			<img src="images/bottles2.png" alt="">
+		</div>
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-3">
 
 				</div>
 				<div class="col-md-7 text-center text-md-left">
@@ -312,7 +318,7 @@
 					<div class="row">
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon2_1.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon2_1.png)">
 
 								</div>
 								<h4>Download our mobile app</h4>
@@ -321,7 +327,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon2_2.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon2_2.png)">
 
 								</div>
 								<h4>Start collecting</h4>
@@ -330,7 +336,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon2_3.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon2_3.png)">
 
 								</div>
 								<h4>Schedule a pick-up</h4>
@@ -339,7 +345,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon2_4.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon2_4.png)">
 
 								</div>
 								<h4>Track your impact</h4>
@@ -379,7 +385,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-auto mx-auto">
+					<div class="svg-wrap">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 548 824">
+							<image id="Logo" width="548" height="824" xlink:href="data:img/png;base64,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"/>
+						</svg>
 
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="nav-why_it__matters" class="page-section aw-whyitmatters">
@@ -394,7 +409,7 @@
 					<div class="row justify-content-center">
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon3_1.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon3_1.png)">
 
 								</div>
 								<h4>13,000 landfills</h4>
@@ -403,7 +418,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon3_2.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon3_2.png)">
 
 								</div>
 								<h4>1+ to 1 ratio</h4>
@@ -412,7 +427,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon3_3.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon3_3.png)">
 
 								</div>
 								<h4>124 coal-fired power plants</h4>
@@ -421,7 +436,7 @@
 						</div>
 						<div class="col-md-6 col-lg-3">
 							<div class="aw-iconbox my-4 my-lg-0">
-								<div class="aw-iconbox--round mx-auto" style="background-image: url(/images/Icon3_4.png)">
+								<div class="aw-iconbox--round mx-auto" style="background-image: url(images/Icon3_4.png)">
 
 								</div>
 								<h4>30% more resources</h4>

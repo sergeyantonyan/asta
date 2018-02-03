@@ -21,9 +21,11 @@ gulp.task('styles', function() {
 });
 
 var buildStyles = function() {
-  var sassOptions = {
-    style: 'compressed'
-  };
+    var sassOpts = {
+        errLogToConsole: true,
+        outputStyle: "expanded",
+        style: "expanded"
+    };
 
   var injectFiles = gulp.src([
     path.join(conf.paths.src, '/assets/scss/**/*.scss'),
@@ -51,7 +53,7 @@ var buildStyles = function() {
     .pipe($.inject(injectFiles, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))
     .pipe($.sourcemaps.init())
-    .pipe($.sass(sassOptions)).on('error', conf.errorHandler('Sass'))
+    .pipe($.sass(sassOpts)).on('error', conf.errorHandler('Sass'))
     .pipe($.autoprefixer()).on('error', conf.errorHandler('Autoprefixer'))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app/')));

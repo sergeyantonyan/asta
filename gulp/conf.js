@@ -13,7 +13,7 @@ var gutil = require('gulp-util');
  */
 exports.paths = {
   src: 'src',
-  dist: '.dist',
+  dist: 'astaworks',
   tmp: '.tmp',
   generated: 'generated',
   favicons: 'favicons'

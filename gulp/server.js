@@ -8,11 +8,9 @@ var argv = require('yargs').argv;
 
 var browserSync = require('browser-sync');
 
-var proxyMiddleware = require('http-proxy-middleware');
-
 var util = require('util');
 
-function browserSyncInit(baseDir, browser) {
+function browserSyncInit (baseDir, browser) {
     browser = browser === undefined ? 'default' : browser;
 
     var routes = null;
@@ -26,17 +24,6 @@ function browserSyncInit(baseDir, browser) {
         baseDir: baseDir,
         routes: routes
     };
-
-    var proxyOptions = {
-        target: pkg.API,
-        changeOrigin: true
-        // logLevel: 'debug',
-        // onProxyReq: function (proxyReq, req, res) {
-        //    console.log(proxyReq);
-        //  }
-    };
-
-    server.middleware = proxyMiddleware('/api', proxyOptions);
 
 
     browserSync.instance = browserSync.init({
